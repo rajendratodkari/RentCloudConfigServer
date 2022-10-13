@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rajendratodkari/RentCloudConfigStore
+          # username: rajendratodkari
+          # password: <mypassword>
+          search-paths:
+            - 'service-configs/*service'
+          default-label: master
+
+server:
+  port: 8888
